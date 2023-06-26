@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ecommerce-desgin/static/css/main.817b7167.css",
+    "main.js": "/ecommerce-desgin/static/js/main.6d6ded34.js",
+    "static/media/laptops.png": "/ecommerce-desgin/static/media/laptops.a5a6ab642345b5d38784.png",
+    "static/media/prod4.png": "/ecommerce-desgin/static/media/prod4.60c973db7361e54bb831.png",
+    "static/media/prod3.png": "/ecommerce-desgin/static/media/prod3.c073f706ba444448c519.png",
+    "static/media/mobile2.png": "/ecommerce-desgin/static/media/mobile2.1b3cf13086e809bb8d7d.png",
+    "static/media/mobile1.png": "/ecommerce-desgin/static/media/mobile1.1997f77f2ce6b9677dc6.png",
+    "static/media/mobile.png": "/ecommerce-desgin/static/media/mobile.1c4bc892a60e36742151.png",
+    "static/media/prod1.png": "/ecommerce-desgin/static/media/prod1.9f9a0d840227c590ac5d.png",
+    "static/media/clothe.png": "/ecommerce-desgin/static/media/clothe.63497de16012693f71f1.png",
+    "static/media/labtop.png": "/ecommerce-desgin/static/media/labtop.72427ac57eccb337dd2b.png",
+    "static/media/avatar.png": "/ecommerce-desgin/static/media/avatar.f5ed20588df8bb546e2d.png",
+    "static/media/brand3.png": "/ecommerce-desgin/static/media/brand3.1a0049b1f1a261d0e6d1.png",
+    "index.html": "/ecommerce-desgin/index.html",
+    "main.817b7167.css.map": "/ecommerce-desgin/static/css/main.817b7167.css.map",
+    "main.6d6ded34.js.map": "/ecommerce-desgin/static/js/main.6d6ded34.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.817b7167.css",
+    "static/js/main.6d6ded34.js"
+  ]
+}
