@@ -1,23 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.scss"
+import 'aos/dist/aos.css';
+import HomePage from './Pages/HomePage';
+import { Route, Routes } from 'react-router-dom';
+import NavbarLogin from './Components/uttilies/Navbar/NavbarLogin';
+import Footer from './Components/uttilies/Footer/Footer';
+import LoginPage from './Pages/Auth/Login/LoginPage';
+import Register from './Pages/Auth/Register/Register';
+import CategoriePage from './Pages/CategoriePage/CategoriePage';
+import AllBrand from './Pages/AllBrand/AllBrand';
+import CategorieShop from './Pages/CategorieShop/CategorieShop';
+import ProductDetailsPage from './Pages/Products/ProductDetailsPage/ProductDetailsPage';
+import Cart from './Pages/Cart/Cart';
+import PaymentPage from './Pages/PaymentPage/PaymentPage';
+import AdminPage from './Pages/Admin/AdminPage';
+import AdminAllProductsItems from './Components/Admin/AdminAllProductsItems';
+import AdminAllOrdersCom from './Components/Admin/AdminAllOrdersCom';
+import AdminAddBrandCom from './Components/Admin/AdminAddBrandCom';
+import AdminAddCategoriyCom from './Components/Admin/AdminAddCategoriyCom';
+import AdminAddSubCategoriyCom from './Components/Admin/AdminAddSubCategoriyCom';
+import AdminAddProductCom from './Components/Admin/AdminAddProductCom';
+import AdminOrderDetails from './Components/Admin/AdminOrderDetails';
+import UserPage from './Pages/User/UserPage';
+import UserAllProductCom from './Components/User/UserAllProductCom';
+import UserFavorite from './Components/User/UserFavorite';
+import UserAdresses from './Components/User/UserAdresses';
+import UserProfile from './Components/User/UserProfile';
+import UserAddAddress from './Components/User/UserAddAddress';
+import UserEditAdderss from './Components/User/UserEditAdderss';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavbarLogin />
+      <Routes >
+        <Route index element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/allcategorie" element={<CategoriePage />} />
+        <Route path="/allbrand" element={<AllBrand />} />
+        <Route path="/products" element={<CategorieShop />} />
+        <Route path="/products/:id" element={<ProductDetailsPage />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/order/paymethoud" element={<PaymentPage />} />
+        <Route path='admin' element={<AdminPage />} >
+          <Route index element={<AdminAllProductsItems />} />
+          <Route path="allorders" element={<AdminAllOrdersCom />} />
+          <Route path="addbrand" element={<AdminAddBrandCom />} />
+          <Route path="addcategory" element={<AdminAddCategoriyCom />} />
+          <Route path="addsubcategory" element={<AdminAddSubCategoriyCom />} />
+          <Route path="addproduct" element={<AdminAddProductCom />} />
+          <Route path="order/23" element={<AdminOrderDetails />} />
+        </Route>
+        <Route path='user' element={<UserPage />} >
+          <Route index element={<UserAllProductCom />} />
+          <Route path="favorite" element={<UserFavorite />} />
+          <Route path="addresses" element={<UserAdresses />} />
+          <Route path="profile" element={<UserProfile />} />
+          <Route path="add-address" element={<UserAddAddress />} />
+          <Route path="edit-address" element={<UserEditAdderss />} />
+        </Route>
+      </Routes>
+      <Footer />
     </div>
   );
 }
