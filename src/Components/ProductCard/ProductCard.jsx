@@ -7,7 +7,7 @@ import rate from "../../assets/images/rate.png";
 import { Link } from 'react-router-dom';
 const ProductCard = () => {
     return (
-        <Col xs="12" sm="12" md="6" lg="4"  className="d-flex">
+        <Col xs="12" sm="12" md="6" lg="3"  className="d-flex">
 
             <Card
           className="my-2 card-item"
